@@ -1,19 +1,102 @@
-h1{
-    display: block;
-    font-size: 25px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
-.p.card{
-    border: solid;
-    border-color: blue;
-    padding: 30px 15 px;
-    border-radius: 5px;
+
+body{
+    background: #585c68;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
 }
-.PP{
-    display: block;
+.bold{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
 }
-#PP{
-    /* padding: 20 px; */
-    width: 160px;
-    height: 160px;
-    border-radius: 60%;
+.semibold{
+    font-weight: 800;
+    font-size: 16px;
+}
+.profil{
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+.profil .p_kiri{
+    width: 280px;
+    background: #0bb5f4;    
+}
+.profil .p_kiri .tentang{
+    text-align: justify;
+}
+.profil .p_kiri .foto_profil{
+    width: 100%;
+    height: 280px;
+    margin-bottom: 10px;
+}
+.profil>.p_kiri>.foto_profil>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+}
+.profil .p_kiri .konten_profil{
+    padding: 0 25px;
+}
+.tentang .semibold{
+    text-align: center;
+}
+.sosmed .semibold{
+    text-align: center;
+}
+.profil .nama{
+    margin-bottom: 20px;
+}
+.profil .p_kiri .bold{
+    color: #fff;
+}
+.profil .p_kiri .semibold{
+    color: #efe9e9;
+}
+.profil .p_kiri ul li{
+    display: flex;
+    text-align: justify;
+    margin: 5px;
+}
+.profil .p_kiri ul .icon{
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+.nama{
+    margin: 5px;
+    text-align: center;
+}
+.profil .p_kanan{
+    width: 520px;
+    background: #fff;
+    padding: 25px;
+}
+
+.profil .p_kanan .pekerjaan ul,
+.profil .p_kanan .pendidikan ul{
+    padding-left: 40px;
+    overflow: hidden;
+}
+.profil .p_kanan .pekerjaan ul,
+.profil .p_kanan .pendidikan ul{
+    border-bottom: 2px solid #0bb5f4;
+}
+.profil .p_kanan .pekerjaan .judul,
+.profil .p_kanan .pendidikan .judul{
+    margin-bottom: 5px;
+}
+.profil .p_kanan ul li .info{
+    margin-bottom: 20px;
+}
+.profil .p_kanan ul li{
+    text-align: justify;
 }
